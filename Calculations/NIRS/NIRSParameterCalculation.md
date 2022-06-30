@@ -187,6 +187,8 @@ const L_coefreq = new Float32Array([
 
 Uses the coefficients calculated in step 3 and the `c_beta` matrix to calculate the TOI.
 
+##### **MATLAB Code**
+
 ```
 OD_test = -log(L_coefreq./Amps_coef)';
 TOI = c_beta*[OD_test; ones(1, size(OD_test,2))];
